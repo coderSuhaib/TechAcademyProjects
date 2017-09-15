@@ -22,7 +22,7 @@ class ParentWindow(Frame):
         self.master.minsize(560,300)
         self.master.maxsize(560,300)
         self.master.title('The Daily File Transfer')
-        self.master.configure(bg='#404040')
+        self.master.configure(bg='#F5F3EE')
 
 
 
