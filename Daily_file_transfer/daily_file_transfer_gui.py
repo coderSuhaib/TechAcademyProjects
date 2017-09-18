@@ -50,6 +50,12 @@ def load_gui(self):
     self.scrollbar2.grid(row = 2, column =6 , rowspan = 3, padx=(0,0),pady=(5,10), sticky= N+E+S)
     self.list2.grid(row = 2, column = 4, rowspan = 3, columnspan = 2, padx=(10,0), pady=(5,10), sticky= N+E+S+W)
 
+    # This section is for the label and the entry box of the last file transfer
+    self.lbl_ltransfer = tk.Label(self.master, text = "")
+    self.lbl_ltransfer.grid(row = 5, column = 0, columnspan = 5, padx = (10,0), pady = (5,0), sticky = N+W)
+
+
+
     # This section is for the copy and close buttons GUI 
     self.btn_copy = tk.Button(self.master, width = 6, height = 2, text = "Copy", command = lambda: daily_file_transfer_func.copy_files(self))
     self.btn_copy.grid(row = 5, column = 5, sticky = N+E)
