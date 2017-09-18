@@ -29,7 +29,7 @@ class ParentWindow(Frame):
 
         # load in the GUI widgets from a separate module
         daily_file_transfer_gui.load_gui(self)
-
+        daily_file_transfer_func.update_entry(self)
 
 
 
